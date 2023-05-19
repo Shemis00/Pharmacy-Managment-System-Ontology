@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Pharmacy-managment-system="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#buy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#buy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#manage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#manage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#sell -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#sell">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#customerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#customerID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#employeeID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#employeeID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#orderID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#orderID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#salary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#buy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#customerID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#drugname"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#price"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#employeeID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#password"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#salary"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#manage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#manage"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#has"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#has"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#orderID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentAmount"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#paymentID"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#age"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#email"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#gender"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <Pharmacy-managment-system:buy rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O1"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:customerID>c001</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:email>ahmed@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:gender>Male</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Ahmed</Pharmacy-managment-system:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <Pharmacy-managment-system:buy rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O3"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">45</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:customerID>c002</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:gender>Female</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Manal</Pharmacy-managment-system:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#C3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Customer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <Pharmacy-managment-system:buy rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O2"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:customerID>c003</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:email>sayed@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:gender>Male</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Sayed</Pharmacy-managment-system:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <Pharmacy-managment-system:drugID>d001</Pharmacy-managment-system:drugID>
+        <Pharmacy-managment-system:drugname>Panadol</Pharmacy-managment-system:drugname>
+        <Pharmacy-managment-system:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</Pharmacy-managment-system:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <Pharmacy-managment-system:drugID>d002</Pharmacy-managment-system:drugID>
+        <Pharmacy-managment-system:drugname>Vitamin C</Pharmacy-managment-system:drugname>
+        <Pharmacy-managment-system:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</Pharmacy-managment-system:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Drug"/>
+        <Pharmacy-managment-system:drugID>d003</Pharmacy-managment-system:drugID>
+        <Pharmacy-managment-system:drugname>Otrivin</Pharmacy-managment-system:drugname>
+        <Pharmacy-managment-system:price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</Pharmacy-managment-system:price>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#M1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#M1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Manager"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <Pharmacy-managment-system:manage rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH1"/>
+        <Pharmacy-managment-system:manage rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH2"/>
+        <Pharmacy-managment-system:manage rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH3"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:email>Mohamed@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:employeeID>e001</Pharmacy-managment-system:employeeID>
+        <Pharmacy-managment-system:gender>male</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Mohamed</Pharmacy-managment-system:name>
+        <Pharmacy-managment-system:password>mohamed123</Pharmacy-managment-system:password>
+        <Pharmacy-managment-system:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20000.0</Pharmacy-managment-system:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D1"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D2"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P1"/>
+        <Pharmacy-managment-system:orderID>o001</Pharmacy-managment-system:orderID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D1"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P2"/>
+        <Pharmacy-managment-system:orderID>o002</Pharmacy-managment-system:orderID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Order"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D1"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D2"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#D3"/>
+        <Pharmacy-managment-system:has rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P3"/>
+        <Pharmacy-managment-system:orderID>o003</Pharmacy-managment-system:orderID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+        <Pharmacy-managment-system:customerID>c001</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:orderID>o001</Pharmacy-managment-system:orderID>
+        <Pharmacy-managment-system:paymentAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">420.0</Pharmacy-managment-system:paymentAmount>
+        <Pharmacy-managment-system:paymentID>p001</Pharmacy-managment-system:paymentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+        <Pharmacy-managment-system:customerID>c003</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:orderID>o002</Pharmacy-managment-system:orderID>
+        <Pharmacy-managment-system:paymentAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">120.0</Pharmacy-managment-system:paymentAmount>
+        <Pharmacy-managment-system:paymentID>p002</Pharmacy-managment-system:paymentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#P3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Payment"/>
+        <Pharmacy-managment-system:customerID>c002</Pharmacy-managment-system:customerID>
+        <Pharmacy-managment-system:orderID>o003</Pharmacy-managment-system:orderID>
+        <Pharmacy-managment-system:paymentAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">455.0</Pharmacy-managment-system:paymentAmount>
+        <Pharmacy-managment-system:paymentID>p003</Pharmacy-managment-system:paymentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+        <Pharmacy-managment-system:sell rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O1"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:email>ragab@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:employeeID>e002</Pharmacy-managment-system:employeeID>
+        <Pharmacy-managment-system:gender>Male</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Ragab</Pharmacy-managment-system:name>
+        <Pharmacy-managment-system:password>ragab123</Pharmacy-managment-system:password>
+        <Pharmacy-managment-system:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000</Pharmacy-managment-system:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+        <Pharmacy-managment-system:sell rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O2"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">48</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:email>Mona@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:employeeID>e003</Pharmacy-managment-system:employeeID>
+        <Pharmacy-managment-system:gender>Female</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Mona</Pharmacy-managment-system:name>
+        <Pharmacy-managment-system:password>mona123</Pharmacy-managment-system:password>
+        <Pharmacy-managment-system:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000</Pharmacy-managment-system:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#PH3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Employee"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#Pharmacist"/>
+        <Pharmacy-managment-system:sell rdf:resource="http://www.semanticweb.org/user/ontologies/2023/4/Pharmacy-managment-system#O3"/>
+        <Pharmacy-managment-system:age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">39</Pharmacy-managment-system:age>
+        <Pharmacy-managment-system:email>Michael@gmail.com</Pharmacy-managment-system:email>
+        <Pharmacy-managment-system:employeeID>e004</Pharmacy-managment-system:employeeID>
+        <Pharmacy-managment-system:gender>Male</Pharmacy-managment-system:gender>
+        <Pharmacy-managment-system:name>Michael</Pharmacy-managment-system:name>
+        <Pharmacy-managment-system:password>michael123</Pharmacy-managment-system:password>
+        <Pharmacy-managment-system:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9500</Pharmacy-managment-system:salary>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
